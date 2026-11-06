@@ -7,355 +7,344 @@
 
     <title>My Portfolio</title>
 
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+  
+</head>
+<style>
     
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #ad3333;
-        }
-
-       
-
-        header {
-            background: #07b524;
-            color: rgba(255, 255, 255, 0.506);
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h2 {
-            font-size: 22px;
-        }
-
-        nav a {
-            color: rgb(238, 242, 26);
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 14px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 
-        .class1 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px 5%;
-            min-height: 280px;
-            text-shadow: #07b524;
-            text-size-adjust:initial;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
-
-        .hero h2 {
-            color: #ff725e;
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            color: #777;
-            font-size: 14px;
-        }
-
-        .profile {
-            width: 230px;
-            height: 190px;
-            border-radius: 50%;
-            background: #c8e0ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 100px;
-        }
-
-
-        section {
-            padding: 25px 3%;
-        }
-
-        section h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-     
-
-        #about p {
-            font-size: 13px;
-            line-height: 1.7;
-            color: #555;
-        }
-
-       
-
-        .skills-container {
-            display: flex;
-            gap: 20px;
-            padding: 10px 20px;
-        }
-
-        .skill {
-            
-            background: #f31383;
-            color: white;
-            text-align: center;
-            padding: 18px;
-            border-radius: 6px;
-            font-size: 15px;
-           
-        }
-
-        
-
-       
-
-        .projects-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .project {
-            background: white;
-            width: 65%;
-            min-height: 120px;
-            padding: 20px;
-            text-align: center;
-            border-radius: 6px;
-         
-        }
-
-
-        .project p {
-            color: #777;
-            font-size: 13px;
-        }
-
-      
-
-        .contact-form {
-            background: white;
-            width: 320px;
-            margin: auto;
-            padding: 20px;
-            border-radius: 6px;
-        }
-
-        .contact-form label {
-            display: block;
-            font-size: 13px;
-            margin-top: 10px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #0750b5;
-            border-radius: 4px;
-        }
-
-        .contact-form textarea {
-            height: 80px;
-        }
-
-        .contact-form button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 12px;
-            background: #0750b5;
-            color: white;
-            
-        }
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
 
 
 
-        footer {
-            background: #0750b5;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 13px;
-        }
+.header {
+    background-color: #0750b5;
+    color: white;
+    padding: 15px 0;
+}
+
+.nav-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+}
+
+.nav-child {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-child a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+  
+}
+.animated-text{
+    color: red;
+}
 
 
-        .top-button {
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            background: #0750b5;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 12px;
-        }
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+    gap: 30px;
+   
+}
 
-      
+.hero-text {
+    flex: 1;
+}
 
-       
+.hero-text h1 {
+    font-size: 2.5rem;
+}
 
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
 
-            nav a {
-                margin: 5px;
-            }
+.hero-text p {
+    margin-top: 12px;
+    font-size: 0.9rem;
+}
 
-            .hero {
-                flex-direction: column-reverse;
-                text-align: center;
-                gap: 25px;
-            }
 
-            .hero h1 {
-                font-size: 30px;
-            }
 
-            .hero h2 {
-                font-size: 27px;
-            }
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-            .skills-container {
-                flex-direction: column;
-            }
 
-            .project {
-                width: 95%;
-            }
-     
-            .img1{
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                object-fit: cover ;
-                border-style: solid ;
-                border-color: #abd0ae;
-            }
-        
 
-       
+.about {
+    padding: 10px 0 25px;
+}
 
-            .profile {
-                width: 170px;
-                height: 150px;
-                font-size: 75px;
-            }
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
 
-    .butt1{
-       color: #1a1010;
-       position: relative;
-       left: 1700px;
-       top: 10px;
-       size: 200px;
-       font-size: 20px;
-       background-color: #ad3333;
+.about p {
+    font-size: 0.85rem;
+ 
+}
+
+
+
+.skills {
+    padding: 15px 0 30px;
+}
+
+.skills-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.skill-child {
+    background-color: #0750b5;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+
+.skill-child h3 {
+    font-size: 1rem;
+}
+
+.skill-child p {
+    font-size: 0.8rem;
+}
+
+
+.projects {
+    padding: 15px 0 30px;
+}
+
+.projects-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-child {
+    background-color: white;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+
+.project-child h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.project-child p {
+    font-size: 0.8rem;
+}
+
+
+.contact {
+    padding: 15px 0 30px;
+}
+
+.contact-form {
+    width: 320px;
+    max-width: 100%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #b5c9e8;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 0.8rem;
+}
+
+.contact-form button {
+    background-color: #0750b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+  
+}
+
+.footer {
+    background-color: #0750b5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8rem;
+}
+
+
+
+.back-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #0750b5;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 2px;
+    border-radius: 3px;
+   
+}
+
+.back-button:hover {
+    background-color: #ff684f;
+}
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nav-child {
+        gap: 10px;
     }
 
 
-        
-
-    </style>
-</head>
-
-<body id="top">
-
+  
+ .class1{
+    color: #333;
+    background-color: rgb(148, 148, 250);
+    margin: 20px;
+    font-size: 20px;
+   border-radius: 100px;
+    border-color: #1d1615;
+ }
    
 
-    <header>
 
-        <h2>My Portfolio</h2>
+</style>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<body>
 
+    <header class="header" id="home">
+        <div class="container nav-parent">
+
+            <h2 class="logo">My Portfolio</h2>
+
+            <nav class="nav-child">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
     </header>
 
 
-    
+    <section class="hero container">
 
-    <div class="class1">
-
-        <div>
+        <div class="hero-text">
             <h1>Hi, I am</h1>
 
-            <h2>Bhupender Saini</h2>
+            <h2 class="animated-text">Full Stack Developer</h2>
 
             <p>
-                Aspiring Web Developer | B.Tech CSE Student
+                Building modern web applications with clean and creative designs.
             </p>
-
         </div>
 
-        <div>
-            <img src="profile.jpg.jpg" alt="img" class="img1">
-            
+        <div class="hero-image">
+            <img src="profile.jpg.jpg" alt="My Profile Photo"  >
         </div>
 
-    </div>
+    </section>
 
 
-    
 
-    <section id="about">
+    <section class="about container" id="about">
 
         <h2>About Me</h2>
 
         <p>
-            Hello! My name is Bhupender, and I am currently
-            learning web development. I am interested in
-            programming, technology and creating interactive
-            websites. My goal is to improve my skills and
-            build useful web projects.
+            Hello! My name is Bhupender. I am a Computer Science student
+            interested in web development and technology. I enjoy learning
+            new skills and creating simple, useful and responsive websites.
+            My goal is to become a skilled developer and build creative
+            projects using modern technologies.
         </p>
 
     </section>
 
 
-   
 
-    <section id="skills">
+    <section class="skills container" id="skills">
 
         <h2>My Skills</h2>
 
-        <div class="skills-container">
+        <div class="skills-parent">
 
-            <div class="skill">
+            <div class="skill-child">
                 <h3>HTML</h3>
                 <p>Beginner</p>
             </div>
 
-            <div class="skill">
+            <div class="skill-child">
                 <h3>CSS</h3>
                 <p>Beginner</p>
             </div>
 
-            <div class="skill">
-                <h3>Python</h3>
+            <div class="skill-child">
+                <h3>JavaScript</h3>
                 <p>Learning</p>
             </div>
 
@@ -365,31 +354,20 @@
 
 
  
-
-    <section id="projects">
+    <section class="projects container" id="projects">
 
         <h2>My Projects</h2>
 
-        <div class="projects-container">
+        <div class="projects-parent">
 
-            <div class="project">
-
+            <div class="project-child">
                 <h3>Project 1</h3>
-
-                <p>
-                    A simple HTML and CSS webpage.
-                </p>
-
+                <p>My first web development project.</p>
             </div>
 
-            <div class="project">
-
+            <div class="project-child">
                 <h3>Project 2</h3>
-
-                <p>
-                    My personal portfolio website.
-                </p>
-
+                <p>A responsive personal portfolio website.</p>
             </div>
 
         </div>
@@ -398,55 +376,37 @@
 
 
    
-
-    <section id="contact">
+    <section class="contact container" id="contact">
 
         <h2>Contact Me</h2>
 
         <form class="contact-form">
 
-            <label>Name:</label>
-            <input type="text"
-                   placeholder="Enter your name"
-                   required>
+            <input type="text" placeholder="Name" required>
 
-            <label>Email:</label>
-            <input type="email"
-                   placeholder="Enter your email"
-                   required>
+            <input type="email" placeholder="Enter your email" required>
 
-            <label>Message:</label>
-            <textarea placeholder="Write your message"
-                      required></textarea>
+            <textarea placeholder="Write your message" rows="3" required></textarea>
 
-            <button type="submit">
-                Send
-            </button>
+            <button type="submit">Send</button>
 
         </form>
 
     </section>
 
 
-    
+  
+    <footer class="footer">
 
-    <footer>
-
-        <p>
-            © 2026 Bhupender Saini. All rights reserved.
-        </p>
+        <p>© 2026 All Rights Reserved</p>
 
     </footer>
 
-    <div>
-    <button class="butt1" > 
-        To previous page
-    </button>
-    </div>
 
+  <button class="class1">
+    To the previous
+  </button>
 
-    
 
 </body>
 </html>
-
